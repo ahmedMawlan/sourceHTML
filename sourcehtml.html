@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="test.css">
+    <title>test</title> 
+  </head>
+  <body>
+
+    <p>hello</p>
+
+    <!-- Table -->
+    <table border="10">
+      <caption>Details</caption>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Ahmed</td>
+          <td>Ramadan</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <!-- <td>Mohamed</td> -->
+          <td>Ramadan</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Alaa</td>
+          <td>Ramadan</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td colspan="2">Sum of Ages</td>
+          <td>50</td>
+        </tr>
+      </tbody>
+    </table> <br/>
+
+    <!-- Formatting Elements -->
+    <p> <mark>welcome</mark> <u>underline</u> <small>small</small> <del>deleted</del> <ins>insert</ins> h<sub>2</sub>o 5<sup>3</sup> </p>
+    
+    <!-- Links >>> we can use links to contact with any email -->
+    <a href="" target="_blank" title="go to home" >Home</a>
+    <a href="mailto:elroby480@gmail.com">My Email</a>
+
+    <!-- images -->
+    <img src="" alt="">
+
+    <!-- lists <ul></ul> , <ol></ol> -->
+    <ul>
+      <li>one</li>
+      <li>
+        two
+        <ul>
+          <li>three</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ol start="4" type="A, I" >
+      <li>one</li>
+      <li>
+        two
+        <ol>
+          <li>three</li>
+        </ol>
+      </li>
+    </ol>
+
+    <!-- description list -->
+    <dl>
+      <dt>
+        html
+        <dd>this is a markup languag</dd>
+        <dd>it's really easy</dd>
+      </dt>
+      <dt>
+        java
+        <dd>this is a programming language</dd>
+      </dt>
+    </dl>
+
+    <!-- 
+      Entities >>> &lt; "<" &gt; ">" &amp; "&" ............
+    -->
+    <p>Entities => &lt; "<" &gt; ">" &amp; "&" ....</p>
+    
+    <!-- figer caption -->
+    <figure>
+      <img src="sky.jpg" alt="" width="200px" height="200px">
+      <figcaption>this is image</figcaption>
+    </figure>
+
+    <!-- Audio Tag -->
+    <audio src="" controls autoplay loop muted>
+      <source src="" type="">
+      <!-- if any browser doesn't support this audio you will show this message -->
+      your browser doesn't support this audi
+    </audio>
+
+    <!-- Video Tag -->
+    <video src="">
+      <source src="" type="" width="" hdight="" loop autoplay muted pooster=""> 
+      <!-- pooster show when your video load on your browser -->
+
+      <!-- if any browser doesn't support this video you will show this message -->
+      your browser doesn't support this video
+
+      <!-- if you put translation in your video you will use >> track -->
+      <track src="" kind="subtitles" srclang="en" label="English">
+    </video>
+
+
+    <!-- 
+      Form 
+    -->
+    <!-- Atributes >> novalidate, target  => in form -->
+    <form action="" method="">
+      <label for="">UserName</label><br>
+      <!-- type >>> text, password, email, submit, radio, checkbox, hidden, reset, color, range, number, file, url, search, date, month, time -->
+      <!-- value >>> text inside value show direct in input field and then we can change this value -->
+      <!-- Atributes >> readonly, disable, autofocus, name, value, required, minlength, maxlength -->
+      <!-- the between readonly and disable that the data when use disable will not go in backend -->
+      <input type="text" placeholder="enter your name" name="name" required value="Ahmed" readonly>
+      <input type="email" name="mail" value="elroby23@gmail.com" disable>
+      <input type="password" name="" autofocus><hr>
+      <div>
+        <p>Radio Input</p>
+        <input type="radio" name="wind" id="win" value="Windows" checked>
+        <label for="win">windows</label><br>
+        <input type="radio" name="mac" id="" value="Mac">
+        <label for="">Mac</label><br>
+      </div>
+      <hr>
+      <div>
+        <p>Checkbox Input</p>
+        <input type="checkbox" name="wind" id="win" value="Windows" checked>
+        <label for="win">windows</label><br>
+        <input type="checkbox" name="mac" id="" value="Mac">
+        <label for="">Mac</label><br>
+      </div>
+      <input type="range" min="" max="" step="" value="">
+      <input type="number" min="1" max="123" step="2" value="2"><br>
+
+      <!-- Select -->
+      <label for="book">Choose book</label><br>
+      <!-- multiple >> allow to choose more than option -->
+      <select name="" id="book" >
+        <optgroup label="Romantic Book">
+          <option value="1">Book1</option>
+          <option value="2" selected>Book2</option>
+          <option value="3">Book3</option>
+        </optgroup>
+        <optgroup label="Since Book">
+          <option value="4">Book4</option>
+          <option value="5">Book5</option>
+          <option value="6">Book6</option>
+        </optgroup>
+      </select><br>
+
+      <!-- Textarea -->
+      <Textarea name="" cols="" rows="" placeholder="test text"></Textarea><br>
+      
+      <!-- Datat List -->
+      <!-- the between datalist and select that in datalist we can search on my options -->
+      <input list="promgramming" name="prog">
+
+      <datalist id="promgramming">
+        <option value="python">
+        <option value="css">
+        <option value="html">
+        <option value="c#">
+        <option value="php">
+      </datalist><br>
+
+      <input type="submit" name="" id="">
+    </form><hr>
+
+    <!-- Qoute, blockquote -->
+    <q>this is Qoute</q>
+    <blockquote>this is blockquote</blockquote>
+
+    <!-- Bdi >> this tag use to isolate -->
+    <p>2 السلام welcome</p>
+    <p><bdi>السلام</bdi> 2 welcome</p>
+
+    <!-- code, pre -->
+    <code>
+      <pre>
+        let name = "Ahmed"
+        let age = 24
+      </pre>
+    </code>
+
+    <script src="test.js"></script>  
+  </body>
+</html>
+
+
+
+<!-- <script src="jss/jquery-3.6.0.min.js"></script> -->
+<!-- <script src="js/popper.min"></script>
+<script src="js/bootstrap.min.js"></script> -->
